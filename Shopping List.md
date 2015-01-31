@@ -138,13 +138,13 @@ Create a form that has 2 text fields, `title` and `description`.
 
 Add a `button` element with the contents of "Add to Shopping List", and give it an id of `add_shopping_list_item_button`.
 
-Add a `click` event handler to the `add_shopping_list_item_button` that will run a function called `add_to_shopping_list()`.
+Add a `click` event handler to the `add_shopping_list_item_button` that will run a function called `add_to_shopping_list()`. [http://www.w3schools.com/jsref/event_onclick.asp](http://www.w3schools.com/jsref/event_onclick.asp)
 
 ### app.js
 
 Create an instance of ShoppingList.
 
-Invoke the shopping_list object's render() method, and store the output to a variable. Write the resulting output html into the `content` div.
+Invoke the shopping_list object's render() method, and store the output to a variable. Write the resulting output html into the `content` div. [http://www.w3schools.com/jsref/prop_html_innerhtml.asp](http://www.w3schools.com/jsref/prop_html_innerhtml.asp)
 
 Create an `add_shopping_list_item_button` function that will read the value of the `title` and `description` fields, then create a new variable named `new_shopping_list_item` that will store the result of constructing a new ShoppingListItem and passing in the values of `title` and `description`.
 
