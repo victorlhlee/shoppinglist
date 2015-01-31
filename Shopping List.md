@@ -42,7 +42,22 @@ The tests should describe the following shopping list functionality:
 - ShoppingListItem has a method named `uncheck`
   -  calling the instance's `uncheck` method will set it's `is_done` property to false
 - ShoppingListItem has a method named `render`
-  -  calling the instance's `render` method will return a string formatted in html, in an <li> element. ex: `<li class="[is_done]"><span>[name]</span> <span>[description]</span></li>`
+  -  calling the instance's `render` method will return a string formatted in html, in an <li> element. `<li class="completed_[is_done]"><span>[name]</span> <span>[description]</span></li>`.  example: `<li class="completed_false"><span>Avocado</span> <span>Must be eaten immediately.</span></li>`
+
+hint: multiline strings in javascript need to be "escaped"
+
+example:
+
+````
+
+var some_html_output = '<ul> \
+  <li class="completed_false"> \
+    <span>Avocado</span> \
+    <span>Must be eaten immediately.</span> \
+  </li> \
+<ul>';
+
+````
 
 #### ShoppingList
 
