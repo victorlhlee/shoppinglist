@@ -42,7 +42,7 @@ The tests should describe the following shopping list functionality:
 - ShoppingListItem has a method named `uncheck`
   -  calling the instance's `uncheck` method will set it's `is_done` property to false
 - ShoppingListItem has a method named `render`
-  -  calling the instance's `render` method will return a string formatted in html, in an <li> element. `<li class="completed_[is_done]"><span>[name]</span> <span>[description]</span></li>`.  example: `<li class="completed_false"><span>Avocado</span> <span>Must be eaten immediately.</span></li>`
+  -  calling the instance's `render` method will construct and return an html formatted string. the string content will be wrapped in "<li>" tags.  `<li class="completed_[is_done]"><span>[name]</span> <span>[description]</span></li>`.   example: `<li class="completed_false"><span>Avocado</span> <span>Must be eaten immediately.</span></li>`
 
 hint: multiline strings in javascript need to be "escaped"
 
@@ -72,7 +72,7 @@ var some_html_output = '<ul> \
   - invoking the `removeItem` method with no parameters should remove the last item in the `items` list, if there are any items, else it does nothing
   - invoking the `removeItem` method by passing in anything else that is not a ShoppingListItem object (that exists in the `items` array) should immediately throw an error
 - ShoppingList has a method named `render`
-  - calling the instance's `render` method will concatenate the result of calling `render()` on each item in this object's `items` array, wrapping it in a <ul> element, and returning an html formatted string. ex: `<ul>...[all the li elements from ShoppingListItem.render()]...</ul>`
+  - calling the instance's `render` method will concatenate the result of calling `render()` on each item in this object's `items` array, wrapping it in a "<ul>" tags, and returning an html formatted string. ex: `<ul>...[all the li elements from ShoppingListItem.render()]...</ul>`
 
 
 ### test.html
